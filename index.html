@@ -13,12 +13,13 @@
   <link type="text/css" rel="stylesheet" href="./css/style.css">
   <link type="text/css" rel="stylesheet" href="./css/font-awesome.min.css">
 </head>
-<body>
+<body itemscope itemtype="http://schema.org/ProfessionalService">
 
   <div class="logo">
     <a href="./">
       <img src="./img/logo.svg" onerror="this.onerror=null; this.src='./img/logo.png'" alt="Nicholas Lindeman lettermark">
     </a>
+    <span style="display:none;"><a href="http://nicholaslindeman.com" itemprop="url"><img src="http://nicholaslindeman.com/img/logo.png" itemprop="logo"></a></span>
   </div>
 
   <div class="menu">
@@ -52,7 +53,7 @@
 
       <div id="intro" class="hero">
         <h1>Hello there!</h1>
-        <p>My name is <a id="nicholas" href="#">Nicholas Lindeman</a> and I am a Kansas City based freelance graphic designer, website designer, and front end developer. I've been building websites for over 10 years now and am always learning new tricks!</p>
+        <p>My name is <a id="nicholas" href="#"><span itemprop="name">Nicholas Lindeman</span></a> and I am a <span itemprop="location">Kansas City</span> based freelance <span itemscope itemtype="http://schema.org/Offer"><span itemprop="itemOffered">graphic design</span>er, <span itemprop="itemOffered">website design</span>er, and <span itemprop="itemOffered">front end developer</span>.</span> I've been building websites for over 10 years now and am always learning new tricks!</p>
         <div class="resume"><a class="button" href="nl_resume_15.pdf" target="_blank">View my resume!</a></div>
       </div>
 
@@ -206,7 +207,7 @@
 
   <div class="footer">
     <div class="content">
-      Nicholas Lindeman &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script>. Built in Kansas City, Missouri.
+      Nicholas Lindeman &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script>. Built in <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="addressLocality">Kansas City, Missouri</span>.</span>
     </div>
   </div>
 
